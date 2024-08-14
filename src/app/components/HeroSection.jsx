@@ -54,7 +54,7 @@ const HeroSection = () => {
               alt="something"
               width={300}
               height={300}
-              class=" absolute transform rounded-full w-[200px] lg:w-[350px]  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className=" absolute transform rounded-full w-[200px] lg:w-[350px]  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             />
           </div>
         </div>
