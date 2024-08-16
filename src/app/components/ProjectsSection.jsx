@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ProjectsCard from "./ProjectsCard";
 import ProjectTag from "./ProjectTag";
+import { motion, useInView } from "framer-motion";
 
 const projectData = [
   {
@@ -67,58 +68,64 @@ const ProjectsSection = () => {
     setTag(newTag);
   };
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const filteredProjects = projectData.filter((project) => {
     return project.tag.includes(tag);
   });
 
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
-    <div>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
-        My projects
-      </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-      </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project) => (
-          <ProjectsCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgURL={project.image}
-            tags={project}
-            gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}
+    <section>
+      <div>
+        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
+          My projects
+        </h2>
+        <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+          <ProjectTag
+            onClick={handleTagChange}
+            name="All"
+            isSelected={tag === "All"}
           />
-        ))}{" "}
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Web"
+            isSelected={tag === "Web"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Mobile"
+            isSelected={tag === "Mobile"}
+          />
+        </div>
+        <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+          {filteredProjects.map((project, index) => (
+            <motion.li
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{duration: 0.3, delay: index * 0.4}}
+            >
+              <ProjectsCard
+                title={project.title}
+                description={project.description}
+                imgURL={project.image}
+                tags={project.tag}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+              />
+            </motion.li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default ProjectsSection;
-
-{
-  /* <button className="rounded-full border-2 border-orange-500 hover:border-white  px-6 text-xl cursor-pointer">
-          All
-        </button>
-        <button className="rounded-full border-2 border-orange-500 hover:border-white  px-6 text-xl cursor-pointer">
-          Web
-        </button> */
-}
