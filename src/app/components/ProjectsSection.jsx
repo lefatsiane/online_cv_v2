@@ -81,7 +81,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section  id="projects" >
+    <section id="projects">
       <div>
         <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
           My projects
@@ -110,7 +110,7 @@ const ProjectsSection = () => {
               variants={cardVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
-              transition={{duration: 0.3, delay: index * 0.4}}
+              transition={{ duration: 0.3, delay: index * 0.4 }}
             >
               <ProjectsCard
                 title={project.title}
