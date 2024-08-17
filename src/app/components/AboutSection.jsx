@@ -10,8 +10,14 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2 ">
         <li>Javascript</li>
-        <li>Taliwind CSS</li>
+        <li>Taliwind CSS & CSS</li>
         <li>HTML</li>
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>MongoDb</li>
+        <li>Google Analytics</li>
+        <li>SQL & no SQL</li>
+        <li>Node.js</li>
       </ul>
     ),
   },
@@ -21,7 +27,9 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2 ">
         <li>HyperionDev</li>
-        <li>Udemy</li>
+        <li>Udemy: 100 days of Python </li>
+        <li>Google Analytics Academy</li>
+        <li>Self Taught</li>
       </ul>
     ),
   },
@@ -30,8 +38,9 @@ const TAB_DATA = [
     id: "Certificates",
     content: (
       <ul className="list-disc pl-2 ">
-        <li>Full Stack</li>
+        <li>HyperionDev: Full Stack Completion Certificate</li>
         <li>Advanced Google Analytics</li>
+        <li>Introduction to Web Design and Development</li>
       </ul>
     ),
   },
@@ -49,8 +58,9 @@ const AboutSection = () => {
     <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-centre py-8 px-4 xl:gap-16 sm:py-16 ">
         <Image
+          className="lg:mt-16 mt-0 "
           src="/images/img8.png"
-          alt="cartoon of web developer by a computer"
+          alt="cartoon of man by a computer"
           width={500}
           height={500}
         />
@@ -58,10 +68,11 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full ">
           <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
           <p className="text-base md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ut
-            fugiat, ipsa quam nihil illo sunt neque tenetur veniam nulla soluta
-            adipisci saepe dolores distinctio molestiae eum, quis voluptate
-            repellat.
+            Results-driven professional excelling in dynamic environments with a
+            positive mindset. Strong organizational skills and dedication ensure
+            high-quality results. Known for balancing artistic expression with
+            business objectives. Adaptable, eager to learn, and ready to make an
+            impact as a software engineer.
           </p>
 
           <div className="flex flex-row mt-8">
