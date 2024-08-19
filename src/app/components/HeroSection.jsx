@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -44,15 +45,22 @@ const HeroSection = () => {
           </p>
 
           <div>
-            <button className="text-white px-6 py-3 rounded-full w-fit sm:w-fit mr-4 bg-gradient-to-br  from-orange-500 via-red-500 to-yellow-500 hover:bg-purple-800  ">
-              Hire Me{" "}
-            </button>
-            <button className="px-1 py-1 rounded-full w-fit sm:w-fit bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500  hover:bg-purple-800 lg:bg-transparent ">
-              <span className=" text-white block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">
-                {" "}
-                Download CV{" "}
-              </span>
-            </button>
+            <Link href={"#contact"}>
+              <button className="text-white px-6 py-3 rounded-full w-fit sm:w-fit mr-4 bg-gradient-to-br  from-orange-500 via-red-500 to-yellow-500 hover:bg-purple-800  ">
+                Hire Me
+              </button>
+            </Link>
+            <a
+              href="/public/Lefa_Tsiane_web_dev_CV_(Original).pdf"
+              download={"Lefa_Tsiane_web_dev_CV_(Original).pdf"}
+            >
+              <button className="px-1 py-1 rounded-full w-fit sm:w-fit bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500  hover:bg-purple-800 lg:bg-transparent ">
+                <span className=" text-white block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">
+                  {" "}
+                  Download CV{" "}
+                </span>
+              </button>
+            </a>
           </div>
         </motion.div>
         <motion.div
@@ -71,16 +79,6 @@ const HeroSection = () => {
               className="absolute transform rounded-full w-[200px] lg:w-[350px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             />
           </div>
-
-          {/* <div className=" relative rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] animate-pulse ">
-            <Image
-              src="/images/mainImg.JPG"
-              alt="something"
-              width={300}
-              height={300}
-              className=" absolute transform rounded-full w-[200px] lg:w-[350px]  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " 
-            />
-          </div> */}
         </motion.div>
       </div>
     </section>
