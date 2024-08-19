@@ -1,32 +1,32 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: process.env.SMTP_PORT,
+  secure: true, // true for 465, false for other ports
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 export async function POST(req, res) {
-  const { body } = await req.json;
-  const { email, subject, message } = body;
+  const { email, subject, message } = await req.json();
   try {
-    const { data, error } = await resend.emails.send({
+    const info = await transporter.sendMail({
       from: fromEmail,
       to: ["lefataleni@gmail.com", email],
       subject: subject,
-      react: (
-        <>
-          {" "}
-          <h1> {subject} </h1>
-          <p>{message}</p>{" "}
-        </>
-      ),
+      html: `
+        <h1>${subject}</h1>
+        <p>${message}</p>
+      `,
     });
 
-    if (error) {
-      return NextResponse.json({ error }, { status: 500 });
-    }
-
-    return NextResponse.json(data);
+    return NextResponse.json({ messageId: info.messageId });
   } catch (error) {
-    return NextResponse.json({ error }, { status: 500 });
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
