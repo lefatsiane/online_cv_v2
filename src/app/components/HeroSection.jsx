@@ -24,14 +24,13 @@ const HeroSection = () => {
             <br />
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Lefa",
-                3000, // wait 1s before replacing "Mice" with "Hamsters"
+                3000,
                 "A Web Developer",
                 3000,
-                "A SEO Pro",
+                "A Web Designer",
                 3000,
-                "An UI/UX Designer",
+                "A UI/UX deveoper",
                 3000,
               ]}
               wrapper="span"
@@ -51,7 +50,7 @@ const HeroSection = () => {
               </button>
             </Link>
             <a
-              href="/public/Lefa_Tsiane_web_dev_CV_(Original).pdf"
+              href="/Lefa_Tsiane_web_dev_CV_(Original).pdf"
               download={"Lefa_Tsiane_web_dev_CV_(Original).pdf"}
             >
               <button className="px-1 py-1 rounded-full w-fit sm:w-fit bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500  hover:bg-purple-800 lg:bg-transparent ">
