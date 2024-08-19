@@ -7,37 +7,40 @@ import { motion, useInView } from "framer-motion";
 const projectData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Car Inventory",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dignissimos unde nemo maiores eligendi hic aspernatur, illo dolores molestiae saepe sequi? Repellendus, nesciunt ipsam ipsum nostrum hic minus officia ex.",
-    image: "images/img6.JPG",
-    tag: ["All", "Web", "Mobile"],
+      "This showcases my full stack capabilities and expertise in Express, MongoDB, and Node to make this code work please insert your own database.",
+    image: "images/CarInventory.png",
+    tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "description of the project",
-    image: "/images/mainImg.JPG",
+    title: "Online Store",
+    description:
+      "This code demonstrates proficiency in React the web app features a functional login, a cart, and product cards.",
+    image: "/images/OnlineStore.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "description of the project",
-    image: "/images/mainImg.JPG",
+    title: "Instagram Clone",
+    description:
+      "This code demonstrates my skills and understanding of app development especially in the front-end ",
+    image: "/images/CloneApp.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Project 4",
-    description: "description of the project",
-    image: "/images/mainImg.JPG",
+    title: "Banking App",
+    description:
+      "This demonstrates my ability in Local State Management and Events",
+    image: "/images/BankingApp.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -45,17 +48,19 @@ const projectData = [
   {
     id: 5,
     title: "Project 5",
-    description: "description of the project",
-    image: "/images/mainImg.JPG",
-    tag: ["All", "Web"],
+    description:
+      "My first portfolio and my first mobile friendly app used to display my previous prjects and for future clients/employers to get familer with me  ",
+    image: "/images/portfolio_1.png",
+    tag: ["All", "Web", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
     title: "Project 6",
-    description: "description of the project",
-    image: "/images/mainImg.JPG",
+    description:
+      "I usesd next.js and tailwind to create this portfolio, this portfolio features a logo that I created my so and an email section to make it easier for prospective clients/employers to contact me",
+    image: "/images/porfolio_2.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
@@ -84,7 +89,7 @@ const ProjectsSection = () => {
     <section id="projects">
       <div>
         <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
-          My projects
+          My Projects
         </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
           <ProjectTag
