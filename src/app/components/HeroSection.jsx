@@ -39,8 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] sm:text-lg mb-6 lg:text-xl text-base ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Let's take it up a notch, together.
           </p>
 
           <div>

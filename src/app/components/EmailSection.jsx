@@ -50,7 +50,10 @@ const EmailSection = () => {
         <h5 className="font-bold text-white text-xl my-2 ">
           Let's Get in Touch
         </h5>{" "}
-        <p className="text-slate-300 mb-4 max-w-md z-10  ">Lorem ipsum</p>
+        <p className="text-slate-300 mb-4 max-w-md z-10  ">
+          Let's take your business to the next level. Feel free to contact me
+          anytime. I reply quickly and offer world-class web services
+        </p>
         <div className="z-10 flex flex-row gap-2 ">
           <Link href="https://github.com/lefatsiane">
             <Image src={GithubIcon} alt="GitHub Icon" />
