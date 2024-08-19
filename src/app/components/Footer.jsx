@@ -14,7 +14,7 @@ const Footer = () => {
             />
           </Link>{" "}
         </span>
-        <p className="text-slate-600 mt-3">all rights reserved</p>
+        <p className="text-slate-600 mt-3"> © All rights reserved</p>
       </div>
     </footer>
   );

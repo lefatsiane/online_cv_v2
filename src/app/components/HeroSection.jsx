@@ -28,9 +28,9 @@ const HeroSection = () => {
                 3000,
                 "A Web Developer",
                 3000,
-                "A Web Designer",
+                "A UI/UX Designer",
                 3000,
-                "A UI/UX deveoper",
+                "A Front-End Developer",
                 3000,
               ]}
               wrapper="span"
