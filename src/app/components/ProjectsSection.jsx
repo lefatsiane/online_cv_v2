@@ -12,7 +12,7 @@ const projectData = [
       "This showcases my full stack capabilities and expertise in Express, MongoDB, and Node to make this code work please insert your own database.",
     image: "images/CarInventory.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/lefatsiane/car_inventory2",
     previewUrl: "/",
   },
   {
@@ -22,7 +22,7 @@ const projectData = [
       "This code demonstrates proficiency in React the web app features a functional login, a cart, and product cards.",
     image: "/images/OnlineStore.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/lefatsiane/onlineStore",
     previewUrl: "/",
   },
   {
@@ -32,7 +32,7 @@ const projectData = [
       "This code demonstrates my skills and understanding of app development especially in the front-end ",
     image: "/images/CloneApp.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/lefatsiane/instagrame_clone",
     previewUrl: "/",
   },
   {
@@ -42,27 +42,27 @@ const projectData = [
       "This demonstrates my ability in Local State Management and Events",
     image: "/images/BankingApp.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/lefatsiane/banking_app",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "Project 5",
+    title: "Online CV",
     description:
       "My first portfolio and my first mobile friendly app used to display my previous prjects and for future clients/employers to get familer with me  ",
     image: "/images/portfolio_1.png",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/lefatsiane/online_cv",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Project 6",
+    title: "My Portfolio",
     description:
-      "I usesd next.js and tailwind to create this portfolio, this portfolio features a logo that I created my so and an email section to make it easier for prospective clients/employers to contact me",
+      "I usesd next.js and tailwind to create this portfolio, this portfolio features a logo that I created my  and an email section to make it easier for prospective clients/employers to contact me",
     image: "/images/porfolio_2.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/lefatsiane/online_cv_v2",
     previewUrl: "/",
   },
 ];
