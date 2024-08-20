@@ -13,7 +13,7 @@ const projectData = [
     image: "images/CarInventory.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/lefatsiane/car_inventory2",
-    previewUrl: "/",
+    previewUrl: "/images/CarInventory_preview.png",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projectData = [
     image: "/images/OnlineStore.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/lefatsiane/onlineStore",
-    previewUrl: "/",
+    previewUrl: "/images/OnlineStore_preview.png",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projectData = [
     image: "/images/CloneApp.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/lefatsiane/instagrame_clone",
-    previewUrl: "/",
+    previewUrl: "/images/CloneApp.png",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const projectData = [
     image: "/images/BankingApp.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/lefatsiane/banking_app",
-    previewUrl: "/",
+    previewUrl: "/images/BankingApp_preview.png",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const projectData = [
     image: "/images/portfolio_1.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/lefatsiane/online_cv",
-    previewUrl: "/",
+    previewUrl: "https://lefa-online-cv.onrender.com",
   },
   {
     id: 6,
