@@ -33,7 +33,7 @@ const projectData = [
     image: "/images/CloneApp.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/lefatsiane/instagrame_clone",
-    previewUrl: "/images/CloneApp.png",
+    previewUrl: "/images/CloneApp_preview.png",
   },
   {
     id: 4,
