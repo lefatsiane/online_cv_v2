@@ -10,7 +10,8 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2 ">
         <li>Javascript</li>
-        <li>Taliwind CSS & CSS</li>
+        <li>Taliwind CSS </li>
+        <li>CSS</li>
         <li>HTML</li>
         <li>React.js</li>
         <li>Next.js</li>
@@ -18,6 +19,8 @@ const TAB_DATA = [
         <li>Google Analytics</li>
         <li>SQL & no SQL</li>
         <li>Node.js</li>
+        <li>Shopify</li>
+        <li>WordPress</li>
       </ul>
     ),
   },
