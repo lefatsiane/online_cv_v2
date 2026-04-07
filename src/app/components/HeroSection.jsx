@@ -48,10 +48,7 @@ const HeroSection = () => {
                 Hire Me
               </button>
             </Link>
-            <a
-              href="/Lefa_Tsiane_web_dev_CV_(Original).pdf"
-              download={"Lefa_Tsiane_web_dev_CV_(Original).pdf"}
-            >
+            <a href="/Lefa_Tsiane_IT_CV.pdf" download={"Lefa_Tsiane_IT_CV.pdf"}>
               <button className="px-1 py-1 rounded-full w-fit sm:w-fit bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500  hover:bg-purple-800 lg:bg-transparent ">
                 <span className=" text-white block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">
                   {" "}
